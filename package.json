@@ -1,0 +1,33 @@
+{
+  "name": "ekms-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for Enterprise Knowledge Management System",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "ekms-mcp-server": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "migrate": "node migrations/run.js",
+    "test": "node --test tests/"
+  },
+  "keywords": [
+    "mcp",
+    "knowledge-management",
+    "ai",
+    "claude",
+    "enterprise"
+  ],
+  "author": "Tom Wang",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
